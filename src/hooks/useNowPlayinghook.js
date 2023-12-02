@@ -11,7 +11,6 @@ const useNowPlayinghook = () => {
       API_options
     );
     const json = await data.json();
-    console.log("hooking the json",json);
     dispatch(addNowPlayingMovies(json?.results));
   };
 

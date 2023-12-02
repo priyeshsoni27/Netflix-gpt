@@ -2,12 +2,12 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import useGetMovieTrailer from "../hooks/useGetMovieTrailer";
 
-const VideoBackground = ({ movieId }) => {
+const VideoBackground = (movieId ) => {
   const dispatch = useDispatch();
   const trailer = useSelector((state) => state?.movies?.movieTrailer);
 
-  // useGetMovieTrailer(movieId) 
-  <useGetMovieTrailer movieId={movieId}/>
+
+  useGetMovieTrailer(movieId) 
 
   return (
     <div className="w-screen">
@@ -19,6 +19,6 @@ const VideoBackground = ({ movieId }) => {
       />
     </div>
   );
-};
+}; 
 
 export default VideoBackground;

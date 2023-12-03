@@ -18,7 +18,7 @@ const Browser = () => {
   useUpCommingMovieHook();
 
   return (
-    <div>
+    <div className="">
       <Header />
       {gptSearchView ? (
         <GptSearch />

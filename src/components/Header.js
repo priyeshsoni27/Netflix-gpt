@@ -3,6 +3,7 @@ import { LOGO, SUPPORTED_LANGUAGES } from "../utils/constant";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleGptSearchView } from "../utils/gptSlice";
 import { getSelectLang } from "../utils/configSlice";
+import GptMovieSuggestions from "./GptMovieSuggestions";
 // import logo from "../../src/assets/Netflix_Logo_PMS.png"
 const Header = () => {
   const dispatch = useDispatch();
